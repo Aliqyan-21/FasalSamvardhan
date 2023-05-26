@@ -1,0 +1,127 @@
+
+@font-face{
+	src: url("Devanagari.ttf");
+	font-family: "Devanagri";
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+nav{
+	display: flex;
+	background: #404153;
+	padding: 1.25em 2em;
+	align-items: center;
+	gap:40px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.main-logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	border: 2px solid #000;
+	box-shadow: 0px 0px 0px 3px #fff;
+}
+.main-logo img{
+	width: 100%;
+}
+
+nav h2{
+	color: #fff;
+	font-size: 2rem;
+
+}
+
+main{
+	
+	background: #202028;
+	width: 100%;
+	padding: 1em 1em;
+}
+
+.description{
+	display: flex;
+	gap: 200px;
+}
+.instruct{
+	width: 500px;
+	height: 400px;
+	border-radius: 10px;
+	margin: 2em;
+	padding: 1em;
+	border: 3px dashed #fff;
+	background: #404153;
+	overflow-y: scroll;
+}
+
+.instruct::-webkit-scrollbar{
+	background-color: transparent;
+	width: 15px;
+}
+.instruct::-webkit-scrollbar-track{
+	margin: 10px;
+}
+.instruct::-webkit-scrollbar-thumb{
+	background-color: rgba(32, 32, 40,0.6);
+	border-radius: 20px;
+	width: 10px;
+}
+.instruct h2{
+	font-size: 1.5rem;
+	color: #fff;
+	margin:0 0 1.5em 0.25em;
+	font-weight: 700;
+}
+
+/* .instruct ul{
+	list-style: dot;
+} */
+
+.instruct li{
+	color: gainsboro;
+	font-size: 1.125rem;
+	margin: 1em;
+	line-height: 30px;
+}
+
+.english{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.hindi{
+	font-family: "Devanagri";
+	
+}
+
+.sec-image img{
+	width: 600px;
+}
+
+.upld-btn a{
+	display: block;
+	text-decoration: none;
+	background-color: #84869f;
+	padding: 1em 1.75em;
+	width: 300px;
+	margin: auto;
+	text-align: center;
+	margin-top: 2em;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: #000;
+	border: 3px solid #e0c99c;
+	transition: 0.3s ease;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.upld-btn a:hover{
+	transform: translate(-10px,-10px);
+	box-shadow: 2px 2px 10px yellow;
+}

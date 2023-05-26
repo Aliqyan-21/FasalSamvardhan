@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Upload an Image</title>
+   </head>
+   <body>
+
+    {% if error_message %}
+        <h1>{{ error_message }}</h1>
+    {% else %}
+        <h1>Result Will Be Here</h1>
+        <img src="{{ url_for('static', filename=img_url[7:]) }}" width="300">
+        <p>Class Name = {{ predicted_class }} and confidence = {{ confidence }}</p>
+    {% endif %}
+    
+   </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Upload an Image</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style_1.css') }}">
+   </head>
+   <body>
+   <header>
+      <nav>
+         <a href="/">
+            <div class="main-logo">
+               <img src="{{ url_for('static', filename='AppImages/logo_transparent.png') }}">
+            </div>
+         </a>
+         <h2>Early Detection of Late Blight and Early Blight in Potatoes Using Machine Learning</h2>
+      </nav>
+   </header>
+   <main>
+      <section class="description">
+         <div class="instruction-container">
+            <div class="english instruct">
+               <h2>English Instruction</h2>
+               <ul>
+                  <li>Take a clear picture of your potato plant using a smartphone or camera.</li>
+                  <li>Visit our website and click on the "Upload" button.</li>
+                  <li>Select the picture of your potato plant from your device.</li>
+                  <li>Click on the "Upload" button to submit the picture for analysis.</li>
+                  <li>Wait for a few seconds while our system analyzes the picture.</li>
+                  <li>The system will detect the type of disease affecting your potato plant and display the result
+                     on the screen.</li>
+                  <li>Based on the result, take appropriate action to treat the disease and save your crop.</li>
+               </ul>
+            </div>
+            <div class="hindi instruct">
+               <h2>हिंदी निर्देश</h2>
+               <ul>
+                  <li>अपने पोटैटो प्लांट की एक स्मार्टफोन कै कैमरे से साफ फोटो लें।</li>
+                  <li>हमारी वेबसाइट पर जाएं और "अपलोड" बटन पर क्लिक करें।</li>
+                  <li>अपनी डिवाइस से अपने पोटैटो प्लांट की तस्वीर चुनें।</li>
+                  <li>विश्लेषण के लिए तस्वीर को सबमिट करने के लिए "अपलोड" बटन पर क्लिक करें।</li>
+                  <li>कुछ सेकंडों तक प्रतीक्षा करें जब हमारी सिस्टम तस्वीर का विश्लेषण करेगा।</li>
+                  <li>सिस्टम आपके पोटैटो प्लांट को किसी भी बीमारी से प्रभावित होने की पहचान करेगा और स्क्रीन पर परिणाम
+                     प्रदर्शित करेगा।</li>
+                  <li>परिणाम के आधार पर, बीमारी का उपचार करने के लिए उचित कार्रवाई लें और अपनी फसल को बचाएं।</li>
+               </ul>
+            </div>
+         </div>
+         <div class="sec-image">
+            <img src="{{ url_for('static', filename='AppImages/plant.png') }}" width="300">
+         </div>
+      </section>
+      <div class="upld-btn">
+         <a href="/upload">Upload Image File</a>
+      </div>
+   </main>
+   </body>
+</html>

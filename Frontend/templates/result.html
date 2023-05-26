@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Upload an Image</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css') }}">
+   </head>
+   <body>
+    <header>
+        <nav>
+         <a href="/">
+            <div class="main-logo">
+               <img src="{{ url_for('static', filename='AppImages/logo_transparent.png') }}">
+            </div>
+         </a>
+           <h2>Early Detection of Late Blight and Early Blight in Potatoes Using Machine Learning</h2>
+        </nav>
+     </header>
+     <main>
+        <section>
+            <div class="image-upload">
+               {% if error_message %}
+
+                  <h1>{{ error_message }}</h1>
+
+               {% else %}
+               
+               <img src="{{ url_for('static', filename=img_url[7:]) }}" width="300">
+                  <p>Class Name = <span>{{ predicted_class }}</span><br>Confidence = <span>{{ confidence }} %</span></p>
+
+               {% endif %}
+            </div>
+            <br><br>
+            <div class="button">
+               {% if predicted_class == "Early Blight"  %}
+               
+                  <button class="dakshesh"><a href="https://www.planetnatural.com/pest-problem-solver/plant-disease/early-blight/"> Treatment </a></button>
+
+               {% else %}
+
+               <button class="dakshesh"><a href="https://www.planetnatural.com/pest-problem-solver/plant-disease/late-blight/"> Treatment </a></button>
+
+               {% endif %}
+            </div>
+        </section>
+     </main>
+    
+   </body>
+</html>
